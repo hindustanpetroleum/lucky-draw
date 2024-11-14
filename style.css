@@ -1,0 +1,113 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  /* height: 100vh; */
+  margin: 0;
+  background-image: url("./image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 20px;
+  color: #faa12c;
+}
+
+img {
+  width: 100px;
+}
+
+.container {
+  /* background-color: rgb(228, 230, 242); */
+  padding: 20px;
+  margin-top: 4%;
+  /* border-radius: 8px; */
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  width: 30%;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  /* margin: 10% 0; */
+  margin-top: 15%;
+  border-radius: 5px;
+  i {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top: 0;
+    width: 3px;
+    height: 8px;
+    background: red;
+    opacity: 0;
+  }
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+#winners {
+  margin-top: 20px;
+}
+
+#winners p {
+  color: white;
+  font-size: 19px;
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.title {
+  font-family: "Raleway", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
+
+#confetti {
+  background: #000;
+  height: 100%;
+  left: 0px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+}
+
+#first-winner {
+  animation-duration: 15s;
+  animation-delay: 15s;
+}
+
+#second-winner {
+  animation-duration: 8s;
+  animation-delay: 9s;
+}
+
+#third-winner {
+  animation-duration: 6s;
+  animation-delay: 6s;
+}
+
+#fourth-winner {
+  animation-duration: 4s;
+  animation-delay: 3s;
+}
+
+#fifth-winner {
+  animation-duration: 2s;
+  /* animation-delay: 1s; */
+}
