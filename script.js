@@ -1,6 +1,6 @@
 // Google Sheets CSV export URL
 const fileUrl =
-  "https://docs.google.com/spreadsheets/d/1ppYBgITkwuHTFsqlzjOU5YqsdVLjkcwtKmpOSYVpoZI/export?format=csv";
+  "https://docs.google.com/spreadsheets/d/15PRIIKyeCrV6veMdSGcU-9f7Bgg7qyhLAHpg17MZzRg/export?format=csv";
 
 document.getElementById("draw-btn").addEventListener("click", drawWinners);
 
@@ -24,7 +24,7 @@ function fetchAndProcessFile(url) {
         skipEmptyLines: true,
         complete: function (results) {
           participants = results.data
-            .map((row) => row.Name)
+            .map((row) => row.fullName)
             .filter((name) => name);
           console.log("Participants:", participants);
         },
